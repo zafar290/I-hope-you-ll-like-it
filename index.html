@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You Minecraft Style</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background: #f3e9f9 url('IMG_20250915_222805_923.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      overflow: hidden;
+    }
+    .content {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      opacity: 0;
+      transition: opacity 1.2s;
+    }
+    .content.show {
+      opacity: 1;
+    }
+    .minecraft-heading {
+      background: none;
+      color: #ff69b4;
+      font-size: 1.7em;
+      font-family: 'Press Start 2P', cursive;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4em;
+    }
+    .minecraft-heart {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url('https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9a/Heart_full_BE.png') no-repeat center/contain;
+      margin: 0 4px;
+    }
+    .love-paragraph {
+      max-width: 600px;
+      width: 90vw;
+      text-align: center;
+      font-size: 1.13em;
+      color: #212121;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 2.7vh;
+      background: rgba(255,255,255,0.89);
+      border-top: 4px solid #ff69b4;
+      padding: 1.2em 1em;
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 0 10px #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="content" id="mainContent">
+    <div class="minecraft-heading">
+      <span class="minecraft-heart"></span>
+      I LOVE YOU SO MUCH
+      <span class="minecraft-heart"></span>
+    </div>
+    <div class="love-paragraph">
+      RIYA I WISH I WAS THERE WITH YOU AND I REALLY DO LOVE YOU SO MUCH MYYY BABY MY PRETTY GIRLFRIEND I WISH I COULD HUG YOU RN BUT I'LL ALWAYS HERE FY NO MATTER WHAT
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById('mainContent').classList.add('show');
+      }, 900);
+    };
+  </script>
+</body>
+</html>
